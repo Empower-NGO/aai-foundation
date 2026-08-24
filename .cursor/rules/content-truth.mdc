@@ -1,0 +1,31 @@
+---
+description: Content truth and brand rules for the Aai Foundation public website
+alwaysApply: true
+---
+
+# Aai Foundation — content and brand
+
+This is the public website for Aai Samajsevi Sanstha (Aai Foundation / Balgram Parivar). It is not EmpowerNGO.
+
+## Facts
+
+- Source of truth for claims: EmpNGO `Documents/Website-Balgram/Aai Samajsevi Sanstha — Website Content Draft.md`
+- Do not invent statistics, quotes, donor names, partner names, facilities, opening hours, or occupancy.
+- Do not publish brochure-only figures unless the human has confirmed them: 115 children, 350+ trees, 700 produce types, Yuvagram “six years”, Prayas Charlotte USA.
+- Work began in 2004; formal registration in 2007. Keep both. Do not collapse to one year.
+- Contact and legal numbers come only from the draft.
+
+## Brand
+
+- Light theme only. Warm stone + sage wash, fresh forest green, terracotta CTAs. No dark mode. No EmpNGO teal. No heritage-brochure maroon.
+- Type: Instrument Serif (headlines) + Manrope (UI). Large type, generous space, pill buttons, rounded photography.
+- Official mark: `/public/assets/logo/aai-mark.png` (circle, transparent). Do not redraw the logo.
+- Official mark: `/public/assets/logo/aai-mark.png` (circle, transparent). Do not redraw the logo.
+- Authentic photographs only, via `content/images.ts` slots. No stock orphans.
+
+## Architecture
+
+- Keep copy in `content/`. Keep `sectionKey` / image slots so a CMS can replace assets later.
+- English only in v1. Do not hard-code strings that cannot later be translated.
+- Do not build CMS admin, payment checkout, or EmpNGO receipt integration unless the current phase asks for it.
+- Follow `Documents/Website-Balgram/Development-Checklist.md`. Complete only the current phase.

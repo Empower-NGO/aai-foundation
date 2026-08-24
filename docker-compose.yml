@@ -1,0 +1,13 @@
+# Dedicated container on the EmpNGO VPS. Joins the existing Docker network.
+# Nginx (empngo-nginx) should route aaifoundation.org here — see Website-Implementation-Plan.md §9b.
+services:
+  aai-web:
+    build: .
+    container_name: aai-web
+    restart: always
+    networks:
+      - empngo-network
+
+networks:
+  empngo-network:
+    external: true
