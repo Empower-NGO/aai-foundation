@@ -35,7 +35,14 @@ https://empower-ngo.github.io/aai-foundation/
 
 This is a static preview only (noindex). Production stays on the VPS / Docker later.
 
-If the first deploy fails, in the GitHub repo open **Settings → Pages** and set **Source** to **GitHub Actions**.
+**First-time setup** (the Actions deploy API 404s until this is done):
+
+1. After the workflow finishes, open **Settings → Pages**.
+2. Set **Source** to **Deploy from a branch**.
+3. Set **Branch** to `gh-pages` and the folder to `/ (root)`.
+4. Save, wait a minute, then open the link above.
+
+If Pages is missing or the site 404s, the repository likely needs to be **public** (GitHub Pages on a private org repo needs a paid plan).
 
 `Dockerfile` and `docker-compose.yml` join the existing `empngo-network`.  
 Nginx on the EmpNGO VPS will route `aaifoundation.org` to `aai-web`.
