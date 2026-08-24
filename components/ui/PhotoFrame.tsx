@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { cn } from "@/lib/cn";
+import { publicAsset } from "@/lib/asset";
 import { imageSlots, type ImageSlotKey } from "@/content/images";
 
 export function PhotoFrame({
@@ -25,7 +26,7 @@ export function PhotoFrame({
       )}
     >
       <Image
-        src={image.src}
+        src={publicAsset(image.src)}
         alt={image.alt}
         fill
         sizes={sizes}

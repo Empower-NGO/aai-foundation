@@ -11,6 +11,7 @@ import { MobileNav } from "@/components/layout/MobileNav";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/cn";
+import { publicAsset } from "@/lib/asset";
 
 export function Header() {
   const pathname = usePathname();
@@ -22,7 +23,7 @@ export function Header() {
         <Link href="/" className="flex min-w-0 items-center gap-2.5">
           <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-sage">
             <Image
-              src="/assets/logo/aai-mark.png"
+              src={publicAsset("/assets/logo/aai-mark.png")}
               alt=""
               width={48}
               height={54}

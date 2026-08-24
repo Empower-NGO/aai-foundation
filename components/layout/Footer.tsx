@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { org } from "@/content/org";
 import { footerNav } from "@/content/nav";
 import { projects } from "@/content/projects";
@@ -53,12 +54,12 @@ export function Footer() {
             <ul className="mt-4 space-y-1 text-sm">
               {footerNav.map((item) => (
                 <li key={item.href}>
-                  <a
+                  <Link
                     href={item.href}
                     className="inline-flex min-h-11 items-center hover:text-forest"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -71,12 +72,12 @@ export function Footer() {
             <ul className="mt-4 space-y-1 text-sm">
               {projects.map((project) => (
                 <li key={project.slug}>
-                  <a
+                  <Link
                     href={project.href}
                     className="inline-flex min-h-11 items-center hover:text-forest"
                   >
                     {project.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

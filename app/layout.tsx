@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   },
   description:
     "Giving children more than shelter. Giving them a family, education, dignity and a future.",
+  ...(process.env.GITHUB_PAGES === "true"
+    ? { robots: { index: false, follow: false } }
+    : {}),
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
