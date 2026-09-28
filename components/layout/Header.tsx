@@ -54,7 +54,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium min-h-10 inline-flex items-center rounded-full px-3.5",
+                  "text-base font-bold min-h-11 inline-flex items-center rounded-full px-3.5",
                   pathname === item.href ||
                   (item.href !== "/" && pathname.startsWith(`${item.href}/`))
                     ? "bg-sage text-forest"

@@ -67,10 +67,10 @@ export function MobileNav({
                       <Link
                         href="/projects"
                         className={cn(
-                          "flex min-h-11 items-center rounded-lg px-2 text-sm",
+                          "flex min-h-11 items-center rounded-lg px-2 text-sm font-bold",
                           pathname === "/projects"
                             ? "text-deep-red"
-                            : "text-body",
+                            : "text-ink",
                         )}
                         onClick={onClose}
                       >
@@ -82,10 +82,10 @@ export function MobileNav({
                         <Link
                           href={project.href}
                           className={cn(
-                            "flex min-h-11 items-center rounded-lg px-2 text-sm",
+                            "flex min-h-11 items-center rounded-lg px-2 text-sm font-bold",
                             pathname === project.href
                               ? "text-deep-red"
-                              : "text-body",
+                              : "text-ink",
                           )}
                           onClick={onClose}
                         >

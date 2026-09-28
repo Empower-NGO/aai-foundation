@@ -41,7 +41,7 @@ export function ProjectsMenu() {
       <button
         type="button"
         className={cn(
-          "inline-flex items-center gap-1 min-h-10 px-3.5 rounded-full text-sm font-medium",
+          "inline-flex items-center gap-1 min-h-11 px-3.5 rounded-full text-base font-bold",
           isActive
             ? "bg-sage text-forest"
             : "text-ink/80 hover:bg-cream hover:text-ink",
@@ -72,10 +72,10 @@ export function ProjectsMenu() {
                 )}
                 onClick={() => setOpen(false)}
               >
-                <span className="block font-display text-lg text-ink">
+                <span className="block text-base font-bold text-ink">
                   {project.name}
                   {project.status === "planned" ? (
-                    <span className="ml-2 align-middle text-xs font-semibold tracking-wide text-forest">
+                    <span className="ml-2 align-middle text-xs font-bold tracking-wide text-forest">
                       Planned
                     </span>
                   ) : null}
