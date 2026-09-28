@@ -1,18 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Instrument_Serif, Manrope } from "next/font/google";
+import { Fraunces, Source_Sans_3 } from "next/font/google";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { org } from "@/content/org";
 import "./globals.css";
 
-const instrument = Instrument_Serif({
-  variable: "--font-instrument",
+const display = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
-  weight: "400",
   display: "swap",
 });
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const sans = Source_Sans_3({
+  variable: "--font-source-sans",
   subsets: ["latin"],
   display: "swap",
 });
@@ -44,7 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${instrument.variable} ${manrope.variable} h-full antialiased`}
+      className={`${display.variable} ${sans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
         <SiteShell>{children}</SiteShell>

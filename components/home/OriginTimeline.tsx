@@ -17,18 +17,18 @@ export function OriginTimeline() {
         <p className="mt-6 max-w-2xl text-lg leading-relaxed">{origin.lead}</p>
       </Reveal>
 
-      <ol className="mt-10 space-y-6 border-l border-forest/25 pl-5 sm:mt-12 lg:grid lg:grid-cols-7 lg:space-y-0 lg:border-l-0 lg:pl-0">
+      <ol className="mt-10 space-y-6 border-l border-forest/25 pl-5 sm:mt-12 xl:grid xl:grid-cols-7 xl:space-y-0 xl:border-l-0 xl:pl-0">
         {origin.steps.map((step, index) => (
-          <li key={step.year} className="relative">
+          <li key={step.year} className="relative min-w-0">
             <span
               aria-hidden="true"
-              className="absolute -left-[1.41rem] top-1.5 h-2.5 w-2.5 rounded-full bg-forest lg:hidden"
+              className="absolute -left-5 top-1.5 h-2.5 w-2.5 rounded-full bg-forest xl:hidden"
             />
             <p className="font-display text-2xl text-forest">{step.year}</p>
             <p className="mt-2 font-semibold text-ink">{step.title}</p>
             <p className="mt-1 text-sm leading-relaxed">{step.text}</p>
             {index < origin.steps.length - 1 ? (
-              <p className="mt-4 hidden text-leaf lg:block" aria-hidden="true">
+              <p className="mt-4 hidden text-leaf xl:block" aria-hidden="true">
                 →
               </p>
             ) : null}

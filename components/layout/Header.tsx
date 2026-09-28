@@ -33,10 +33,10 @@ export function Header() {
           </span>
           <span className="min-w-0">
             <span className="block truncate text-sm font-semibold leading-tight text-ink">
-              <span className="lg:hidden">Aai Foundation</span>
-              <span className="hidden lg:inline">{org.legalName}</span>
+              <span className="xl:hidden">Aai Foundation</span>
+              <span className="hidden xl:inline">{org.legalName}</span>
             </span>
-            <span className="hidden text-xs text-forest lg:block">
+            <span className="hidden text-xs text-forest xl:block">
               {org.tagline}
             </span>
           </span>
@@ -44,7 +44,7 @@ export function Header() {
 
         <nav
           aria-label="Primary"
-          className="hidden lg:flex items-center gap-1 rounded-full bg-surface/80 px-2 py-1 shadow-[0_8px_30px_-18px_rgba(23,22,20,0.45)] ring-1 ring-ink/5"
+          className="hidden min-w-0 xl:flex items-center gap-1 rounded-full bg-surface/80 px-2 py-1 shadow-[0_8px_30px_-18px_rgba(23,22,20,0.45)] ring-1 ring-ink/5"
         >
           {primaryNav.map((item) =>
             item.hasChildren ? (
@@ -68,12 +68,12 @@ export function Header() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-2">
-          <span className="hidden lg:inline-flex">
+          <span className="hidden xl:inline-flex">
             <Button href="/get-involved">Support a Child</Button>
           </span>
           <button
             type="button"
-            className="lg:hidden relative z-50 inline-flex items-center justify-center min-h-11 min-w-11 rounded-full bg-surface text-ink ring-1 ring-ink/10"
+            className="relative z-50 inline-flex min-h-11 min-w-11 items-center justify-center rounded-full bg-surface text-ink ring-1 ring-ink/10 xl:hidden"
             aria-expanded={mobileOpen}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             onClick={() => setMobileOpen((value) => !value)}

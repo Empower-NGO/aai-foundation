@@ -59,7 +59,7 @@ export function ProjectsMenu() {
       <div
         id={menuId}
         hidden={!open}
-        className="absolute left-0 top-full z-50 w-80 pt-3"
+        className="absolute left-0 top-full z-50 w-80 max-w-[calc(100vw-2rem)] pt-3"
       >
         <ul className="rounded-2xl bg-surface p-2 shadow-[0_24px_50px_-20px_rgba(23,22,20,0.35)] ring-1 ring-ink/5">
           {projects.map((project) => (

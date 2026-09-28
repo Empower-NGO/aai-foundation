@@ -11,8 +11,8 @@ export function ProjectSwitcher() {
   if (!pathname.startsWith("/projects")) return null;
 
   return (
-    <div className="border-b border-line/80 bg-cream">
-      <Container className="scrollbar-none flex gap-2 overflow-x-auto py-2">
+    <div className="min-w-0 border-b border-line/80 bg-cream">
+      <Container className="scrollbar-none flex min-w-0 max-w-full gap-2 overflow-x-auto py-2">
         <Link
           href="/projects"
           className={cn(
