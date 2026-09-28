@@ -4,6 +4,7 @@ import { Section } from "@/components/ui/Section";
 import { PhotoFrame } from "@/components/ui/PhotoFrame";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
+import { YouTubeEmbed } from "@/components/ui/YouTubeEmbed";
 
 export const metadata: Metadata = {
   title: "Our Story",
@@ -45,6 +46,20 @@ export default function OurStoryPage() {
             {storyPage.origin.paragraphs.map((p) => (
               <p key={p}>{p}</p>
             ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section id="documentary">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl leading-tight">
+            {storyPage.documentary.title}
+          </h2>
+          <div className="mt-8">
+            <YouTubeEmbed
+              videoId={storyPage.documentary.youtubeId}
+              title={storyPage.documentary.title}
+            />
           </div>
         </div>
       </Section>

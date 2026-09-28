@@ -24,10 +24,10 @@ export default function HomePage() {
       <Education />
       <Yuvagram />
       <Krushigram />
-      <Gurugram />
       <LifeAtBalgram />
       <Outcomes />
       <GetInvolved />
+      <Gurugram />
       <Future />
       <Visit />
     </>

@@ -13,24 +13,24 @@ export const org = {
   website: "https://www.aaifoundation.org",
   email: "info@aaifoundation.org",
   phones: {
-    landline: "02427-202266",
     mobile: ["9763031020", "7588977979"] as const,
   },
   address: {
     lines: [
-      "Balgram Parivar",
-      "Sahara Anathalay Parivar",
-      "Govindwadi, Georai",
-      "District Beed, Maharashtra – 431127",
+      "Sahara Anathalay Parivar, Balgram, Gevrai. Dist. Beed.",
+      "Pin-431127",
     ],
-    short: "Govindwadi, Georai, Beed – 431127, Maharashtra",
+    short: "Balgram, Gevrai, Dist. Beed, Pin-431127",
   },
   yuvagramLocation: "Sharnapur, Chhatrapati Sambhajinagar",
   social: [
-    { label: "Facebook", href: null },
-    { label: "Instagram", href: null },
-    { label: "LinkedIn", href: null },
-    { label: "YouTube", href: null },
+    { label: "YouTube", href: "https://www.youtube.com/@balgrampariwar" },
+    { label: "Facebook", href: "https://www.facebook.com/balgrampariwar" },
+    { label: "Instagram", href: "https://www.instagram.com/balgramaaingo/" },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/company/100508427/",
+    },
   ] as const,
   legal: {
     society: "Society Registration Act 1860 – MH/169, Beed",

@@ -67,19 +67,61 @@ export const donatePage = {
       "A child’s daily life at Balgram — food, care, school and health",
       "Education and higher education, including young people at Yuvagram",
       "Homes, classrooms and other essential infrastructure",
-      "The wider work of Krushigram and, in time, Gurugram",
+      "The wider work of Krushigram, and Gurugram when that planned project begins",
     ],
   },
   tax: {
     title: "Tax exemption",
     text: "Donations made to the organisation are eligible for tax exemption under Section 80G of the Income Tax Act. The 80G registration number in the organisation’s documents is AACTA7281RF20216.",
   },
-  how: {
-    title: "How to give",
-    paragraphs: [
-      "An online payment page is not live yet. Bank and UPI details are not published here until the organisation confirms the latest account information.",
-      "Please write to us or call, and we will share the current way to give. If you wish, tell us whether your gift is for a child, a meal, education, higher education, or general support.",
-      "When online giving and receipts are ready, they will be connected so a receipt can be issued after a donation. Until then, staff will guide you.",
+  bank: {
+    title: "Bank details",
+    rows: [
+      {
+        label: "Account name",
+        value: "Aai Janhit Bahuuddeshiy Sevabhavi Sanstha",
+      },
+      { label: "Bank name", value: "State Bank of India" },
+      { label: "Account number", value: "33831769192" },
+      { label: "IFSC code", value: "SBIN0003843" },
+    ],
+    qr: {
+      src: "/assets/images/donate-qr.jpg",
+      alt: "UPI QR code for Aai Janhit Bahuuddeshiy Sevabhavi Sanstha. UPI ID 9763031020@sbi.",
+      width: 590,
+      height: 922,
+    },
+    upi: "9763031020@sbi",
+  },
+  receipt: {
+    title: "Donation receipt",
+    beforePhone: "Please share the details below with us on WhatsApp at",
+    afterPhone:
+      ", so that we may issue your donation receipt under Section 80G of the Income Tax Act.",
+    phone: "+91 75889 77979",
+    phoneHref: "https://wa.me/917588977979",
+    items: [
+      "Full name",
+      "Address",
+      "PAN",
+      "Mobile number",
+      "Transaction details",
+    ],
+  },
+  fcra: {
+    title: "FCRA account",
+    lead: "For contributions from outside India.",
+    rows: [
+      {
+        label: "Account name",
+        value: "Aai Bahuuddeshiy Sevabhavi Sanstha",
+      },
+      {
+        label: "Bank name",
+        value: "State Bank Of India, Branch – New Delhi Main Branch",
+      },
+      { label: "Account number", value: "00000040187737327" },
+      { label: "IFSC code", value: "SBIN0000691" },
     ],
   },
 } as const;

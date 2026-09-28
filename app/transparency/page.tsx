@@ -56,7 +56,7 @@ export default function TransparencyPage() {
           ))}
         </dl>
         <p className="mt-10 max-w-2xl text-sm leading-relaxed">
-          Contact: {org.phones.landline} · {org.phones.mobile.join(" / ")}. Bank
+          Contact: {org.phones.mobile.join(" / ")}. Bank
           and payment instructions are shared only through the donate
           conversation, from the latest verified details.
         </p>

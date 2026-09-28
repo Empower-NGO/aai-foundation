@@ -31,6 +31,10 @@ export const metadata: Metadata = {
   },
   description:
     "Giving children more than shelter. Giving them a family, education, dignity and a future.",
+  icons: {
+    icon: "/assets/logo/aai-mark.png",
+    apple: "/assets/logo/aai-mark.png",
+  },
   ...(process.env.GITHUB_PAGES === "true"
     ? { robots: { index: false, follow: false } }
     : {}),

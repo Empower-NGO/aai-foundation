@@ -15,6 +15,7 @@ export type ProjectPageContent = {
   connects: { slug: ProjectSlug; text: string }[];
   supportTitle: string;
   support: string;
+  placeholder?: string;
 };
 
 export const projectPages: Record<ProjectSlug, ProjectPageContent> = {
@@ -65,7 +66,7 @@ export const projectPages: Record<ProjectSlug, ProjectPageContent> = {
       },
       {
         slug: "gurugram",
-        text: "The same idea of dignity extends to elderly people through Gurugram.",
+        text: "The same idea of dignity is planned to extend to elderly people through Gurugram.",
       },
     ],
     supportTitle: "Walk with a child",
@@ -107,7 +108,7 @@ export const projectPages: Record<ProjectSlug, ProjectPageContent> = {
       },
       {
         slug: "gurugram",
-        text: "Care that does not expire with age is the same thread as Gurugram.",
+        text: "Gurugram is the planned continuation of care into old age.",
       },
     ],
     supportTitle: "Support this transition",
@@ -153,7 +154,7 @@ export const projectPages: Record<ProjectSlug, ProjectPageContent> = {
       },
       {
         slug: "gurugram",
-        text: "Respect for life — of people and of the land — is one mission.",
+        text: "Gurugram is planned to carry that respect for elderly people.",
       },
     ],
     supportTitle: "Stand with this work",
@@ -163,23 +164,26 @@ export const projectPages: Record<ProjectSlug, ProjectPageContent> = {
   gurugram: {
     slug: "gurugram",
     name: "Gurugram",
-    tagline: "Dignity, care and safety for the elderly.",
+    tagline: "A planned project for dignity, care and safety in old age.",
     storyTitle: "Respect does not have an age.",
     summary: [
-      "Gurugram is Aai’s initiative to offer respect, care and safety to elderly people.",
-      "As family structures and lifestyles change, the need for dignified elderly care continues to grow.",
-      "Through Gurugram, the organisation seeks a place where older people can find security, dignity and human connection.",
+      "Gurugram is a future project. It is planned, and it is not running today.",
+      "The plan is a place of respect, care and safety for elderly people.",
+      "As family structures and lifestyles change, the need for dignified elderly care continues to grow. Gurugram is how Aai intends to answer that need.",
+      "The aim is a place where older people can find security, dignity and human connection.",
       "This sits inside a wider vision: a society that respects its elderly, just as it gives children a family and young people a path to independence.",
-      "The same belief that guides Balgram applies here — a person needs belonging, not only a facility.",
-      "Location, capacity and photographs are not yet in the source documents. They will be added when they are confirmed; we will not invent them.",
+      "The same belief that guides Balgram applies to this plan — a person needs belonging, not only a facility.",
+      "Location, capacity and photographs are not confirmed. They will be added when the organisation shares them.",
     ],
-    activitiesTitle: "What we can say today",
+    activitiesTitle: "What the plan is for",
     activities: [
       "Respect and human connection",
       "Care and safety",
       "A response to changing family life",
     ],
     photos: [],
+    placeholder:
+      "Gurugram is still a plan. A photograph will be added when there is a place to show.",
     connects: [
       {
         slug: "balgram",
@@ -194,8 +198,8 @@ export const projectPages: Record<ProjectSlug, ProjectPageContent> = {
         text: "A wider social mission that includes the land and the elderly.",
       },
     ],
-    supportTitle: "This page will stay honest",
+    supportTitle: "Still ahead",
     support:
-      "We do not yet have a verified location, capacity or photograph for Gurugram. When those details are confirmed, they will be added here. Until then we will not invent them.",
+      "Gurugram is a planned project and is not in operation. Location, capacity and photographs will be added when the organisation confirms them.",
   },
 };

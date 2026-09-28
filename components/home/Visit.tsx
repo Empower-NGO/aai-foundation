@@ -26,12 +26,6 @@ export function Visit() {
         ))}
       </address>
       <div className="mt-4 flex flex-col gap-1">
-        <a
-          href={`tel:${org.phones.landline}`}
-          className="inline-flex min-h-11 items-center hover:text-forest"
-        >
-          {org.phones.landline}
-        </a>
         {org.phones.mobile.map((phone) => (
           <a
             key={phone}

@@ -21,7 +21,7 @@ export function ProjectGrid() {
           ) : (
             <div className="flex aspect-[16/10] items-end rounded-[1.4rem] bg-sage p-6">
               <p className="font-display text-3xl text-forest">
-                A quieter chapter.
+                {project.status === "planned" ? "Planned" : project.name}
               </p>
             </div>
           )}

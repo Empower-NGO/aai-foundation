@@ -9,6 +9,7 @@ export const projects = [
     tagline: "A home where children become a family.",
     href: "/projects/balgram",
     imageSlot: "balgram-campus",
+    status: "active",
   },
   {
     slug: "yuvagram",
@@ -16,6 +17,7 @@ export const projects = [
     tagline: "From childhood to independence.",
     href: "/projects/yuvagram",
     imageSlot: "yuvagram-campus",
+    status: "active",
   },
   {
     slug: "krushigram",
@@ -23,13 +25,15 @@ export const projects = [
     tagline: "Connecting children with the soil.",
     href: "/projects/krushigram",
     imageSlot: "krushigram-farm",
+    status: "active",
   },
   {
     slug: "gurugram",
     name: "Gurugram",
-    tagline: "Dignity, care and safety for the elderly.",
+    tagline: "A planned project for dignity, care and safety in old age.",
     href: "/projects/gurugram",
     imageSlot: null,
+    status: "planned",
   },
 ] as const;
 

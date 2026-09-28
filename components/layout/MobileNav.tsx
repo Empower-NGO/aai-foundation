@@ -90,6 +90,7 @@ export function MobileNav({
                           onClick={onClose}
                         >
                           {project.name}
+                          {project.status === "planned" ? " · Planned" : ""}
                         </Link>
                       </li>
                     ))}

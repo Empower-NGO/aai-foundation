@@ -4,6 +4,7 @@ import { footerNav } from "@/content/nav";
 import { projects } from "@/content/projects";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 
 export function Footer() {
   return (
@@ -23,12 +24,6 @@ export function Footer() {
               ))}
             </address>
             <div className="mt-4 flex flex-col gap-1 text-sm">
-              <a
-                href={`tel:${org.phones.landline}`}
-                className="inline-flex min-h-11 items-center hover:text-forest"
-              >
-                {org.phones.landline}
-              </a>
               {org.phones.mobile.map((phone) => (
                 <a
                   key={phone}
@@ -45,6 +40,7 @@ export function Footer() {
                 {org.email}
               </a>
             </div>
+            <SocialLinks className="mt-5" />
           </div>
 
           <div>
@@ -77,6 +73,11 @@ export function Footer() {
                     className="inline-flex min-h-11 items-center hover:text-forest"
                   >
                     {project.name}
+                    {project.status === "planned" ? (
+                      <span className="ml-2 text-xs font-semibold text-forest">
+                        Planned
+                      </span>
+                    ) : null}
                   </Link>
                 </li>
               ))}
@@ -87,14 +88,8 @@ export function Footer() {
           </div>
         </Container>
 
-        <Container className="pb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-sm text-body">
+        <Container className="pb-6 text-sm text-body">
           <p>© {org.legalName}. All rights reserved.</p>
-          <p>
-            {org.social.map((item) => item.label).join(" · ")}
-            <span className="ml-2 text-xs text-body/70">
-              Profile links to be added
-            </span>
-          </p>
         </Container>
       </div>
     </footer>

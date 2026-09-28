@@ -4,6 +4,7 @@ import { org } from "@/content/org";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -50,12 +51,6 @@ export default function ContactPage() {
               >
                 {org.email}
               </a>
-              <a
-                href={`tel:${org.phones.landline}`}
-                className="inline-flex min-h-11 items-center hover:text-forest"
-              >
-                {org.phones.landline}
-              </a>
               {org.phones.mobile.map((phone) => (
                 <a
                   key={phone}
@@ -69,6 +64,7 @@ export default function ContactPage() {
             <p className="mt-3 text-sm">
               Head of organisation: {org.headOfOrganization}
             </p>
+            <SocialLinks className="mt-6" />
           </div>
         </div>
         <div className="mt-12 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

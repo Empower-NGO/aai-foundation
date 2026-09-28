@@ -9,13 +9,14 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function ProjectView({ slug }: { slug: ProjectSlug }) {
   const page = projectPages[slug];
+  const status = projects.find((project) => project.slug === slug)?.status;
 
   return (
     <>
       <Section id="hero">
         <Reveal>
           <p className="inline-flex rounded-full bg-sage px-3 py-1 text-xs font-semibold tracking-wide text-forest">
-            Project
+            {status === "planned" ? "Planned project" : "Project"}
           </p>
           <h1 className="mt-5 text-4xl sm:text-5xl lg:text-7xl leading-[1.05] sm:leading-[0.95]">
             {page.name}
@@ -36,7 +37,8 @@ export function ProjectView({ slug }: { slug: ProjectSlug }) {
         ) : (
           <div className="mt-10 flex min-h-56 items-end rounded-[1.75rem] bg-sage p-8 sm:p-12">
             <p className="max-w-md font-display text-3xl text-forest">
-              A photograph will be added when the organisation shares one.
+              {page.placeholder ??
+                "A photograph will be added when the organisation shares one."}
             </p>
           </div>
         )}
@@ -100,7 +102,14 @@ export function ProjectView({ slug }: { slug: ProjectSlug }) {
                 href={`/projects/${item.slug}`}
                 className="rounded-2xl bg-cream p-5 ring-1 ring-ink/5 hover:ring-forest/30"
               >
-                <p className="font-display text-2xl text-ink">{meta?.name}</p>
+                <p className="font-display text-2xl text-ink">
+                  {meta?.name}
+                  {meta?.status === "planned" ? (
+                    <span className="ml-2 align-middle text-xs font-semibold tracking-wide text-forest">
+                      Planned
+                    </span>
+                  ) : null}
+                </p>
                 <p className="mt-2 text-sm leading-relaxed">{item.text}</p>
               </Link>
             );
@@ -118,14 +127,8 @@ export function ProjectView({ slug }: { slug: ProjectSlug }) {
               Visit or write
             </Button>
           </div>
-          <p className="mt-8 flex flex-col gap-1 text-sm sm:block">
+          <p className="mt-8 text-sm">
             <span>{org.address.short}</span>
-            <a
-              href={`tel:${org.phones.landline}`}
-              className="inline-flex min-h-11 items-center sm:ml-2 sm:inline"
-            >
-              {org.phones.landline}
-            </a>
           </p>
         </div>
       </Section>

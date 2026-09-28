@@ -74,6 +74,11 @@ export function ProjectsMenu() {
               >
                 <span className="block font-display text-lg text-ink">
                   {project.name}
+                  {project.status === "planned" ? (
+                    <span className="ml-2 align-middle text-xs font-semibold tracking-wide text-forest">
+                      Planned
+                    </span>
+                  ) : null}
                 </span>
                 <span className="mt-0.5 block text-sm text-body leading-snug">
                   {project.tagline}

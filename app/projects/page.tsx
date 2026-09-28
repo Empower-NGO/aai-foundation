@@ -6,7 +6,7 @@ import { ProjectGrid } from "@/components/project/ProjectGrid";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Balgram, Yuvagram, Krushigram and Gurugram — four projects of Aai Samajsevi Sanstha.",
+    "Balgram, Yuvagram and Krushigram, and Gurugram, a planned project of Aai Samajsevi Sanstha.",
 };
 
 export default function ProjectsPage() {

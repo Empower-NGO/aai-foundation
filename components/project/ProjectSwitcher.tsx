@@ -36,6 +36,7 @@ export function ProjectSwitcher() {
             )}
           >
             {project.name}
+            {project.status === "planned" ? " · Planned" : ""}
           </Link>
         ))}
       </Container>

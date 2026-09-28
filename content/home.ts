@@ -62,7 +62,7 @@ export const home = {
   projectsIntro: {
     eyebrow: "Four projects",
     title: "A life, not a programme.",
-    lead: "Childhood in a family. Youth with support. A relationship with the land. Dignity in old age.",
+    lead: "Childhood in a family. Youth with support. A relationship with the land. Gurugram is planned for dignity in old age.",
   },
   balgram: {
     eyebrow: "Balgram Parivar",
@@ -158,10 +158,10 @@ export const home = {
     secondarySlot: "krushigram-goshala" as ImageSlotKey,
   },
   gurugram: {
-    eyebrow: "Gurugram",
-    title: "Dignity, care and safety for the elderly.",
-    body: "As families and lives change, the need for respectful elderly care grows. Gurugram is Aai’s initiative to offer security, dignity and human connection. We will share more as verified detail is ready.",
-    cta: { label: "Meet Gurugram", href: "/projects/gurugram" },
+    eyebrow: "Planned",
+    title: "Gurugram is a future project.",
+    body: "Gurugram is planned as a place of security, dignity and human connection for elderly people. It is not running today. Location and other details will be shared when the organisation confirms them.",
+    cta: { label: "Read the plan", href: "/projects/gurugram" },
   },
   life: {
     eyebrow: "Life at Balgram",
@@ -214,6 +214,7 @@ export const home = {
       "Yuvagram, and young adults after 18",
       "Sustainable agriculture and self-reliance",
       "Cultural and educational spaces",
+      "Gurugram, a planned project for elderly care",
     ],
   },
   visit: {
