@@ -47,5 +47,5 @@ Making the repository public is not enough. Pages must also be switched on:
 
 If this page is missing, an organisation owner must allow Pages under the org **Settings → Member privileges**.
 
-`Dockerfile` and `docker-compose.yml` join the existing `empngo-network`.  
+`Dockerfile` and `docker-compose.yml` join the existing `empngo_empngo-network`.  
 Nginx on the EmpNGO VPS will route `aaifoundation.org` to `aai-web`.

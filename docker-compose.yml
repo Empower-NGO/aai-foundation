@@ -11,3 +11,4 @@ services:
 networks:
   empngo-network:
     external: true
+    name: empngo_empngo-network
